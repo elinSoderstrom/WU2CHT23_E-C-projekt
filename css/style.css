@@ -9,6 +9,10 @@
 #start_page {
 
     display: grid;
-
+    height: 200hv;
+    grid-template-rows: 3fr 2fr 3fr;
 
 }
+
+#
+
