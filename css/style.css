@@ -1,18 +1,67 @@
 * {
 
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-#start_page {
+#start_body {
 
     display: grid;
-    height: 200hv;
-    grid-template-rows: 3fr 2fr 3fr;
+    height: 100vh;
+    grid-template-rows: 1fr 2fr 1fr 400px;
+    grid-template-areas: 
+        "nav"
+        "img"
+        "sec1"
+        "sec2"
+    ;
+    
+    background-color: antiquewhite;
+}
+
+#start_nav {
+
+    grid-area: nav;
+    background-color: brown;
+    display
 
 }
 
-#
+#start_sec1 {
+
+    grid-area: img;
+    background-color: aquamarine;
+
+}
+
+#about_title {
+
+    grid-area:sec1;
+    background-color: blue;
+
+}
+
+#start_sec2 {
+
+    display: flex;
+    grid-area:sec2 ;
+    background-color: blueviolet;
+
+
+}
+
+
+#space_picture {
+
+    height: 400px;
+    width: auto;
+
+}
+
+
+
+
 
