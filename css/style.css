@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Orbitron:wght@900&display=swap');
+
 * {
 
 
@@ -11,57 +13,115 @@
 
     display: grid;
     height: 100vh;
-    grid-template-rows: 1fr 2fr 1fr 400px;
+    grid-template-rows: 50px 2fr 400px;
     grid-template-areas: 
         "nav"
         "img"
-        "sec1"
         "sec2"
     ;
-    
     background-color: antiquewhite;
 }
 
 #start_nav {
 
     grid-area: nav;
-    background-color: brown;
-    display
+    background-color: #2980b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-#start_sec1 {
+ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: #d1b203;
+    font-family: orbitron;
+
+}
+
+
+#start_img {
 
     grid-area: img;
     background-color: aquamarine;
-
-}
-
-#about_title {
-
-    grid-area:sec1;
-    background-color: blue;
-
-}
-
-#start_sec2 {
-
     display: flex;
-    grid-area:sec2 ;
-    background-color: blueviolet;
+    align-items: flex-end;
+    justify-content: center;
 
 
 }
-
 
 #space_picture {
 
     height: 400px;
-    width: auto;
+    width: 1263px;
 
 }
 
 
 
+#start_sec2 {
 
+    grid-area:sec2 ;
+    background-color: #2980b9;
 
+    display: grid;
+
+    grid-template-rows: 3fr 7fr ;
+    grid-template-columns: 2fr 1fr ;
+    grid-template-areas: 
+    "head img2"
+    "text img2"
+    ;
+
+}
+
+#nerdy_img  {
+
+    grid-area: img2;
+    background-color: #2980b9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#alien {
+
+    height: 300px;
+    width: auto;
+}
+
+#nerdy_title {
+
+    grid-area: head;
+    background-color: #2980b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d1b203;
+    font-size: 30px;
+    font-family: orbitron;
+}
+
+#about_us {
+
+    grid-area: text;
+    background-color: #2980b9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+    
+}
+
+#about_text {
+
+    width: 550px;
+    color: #023056;
+    font-family: orbitron;
+}
