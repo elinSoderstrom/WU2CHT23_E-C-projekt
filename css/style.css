@@ -125,3 +125,75 @@ ul {
     color: #023056;
     font-family: orbitron;
 }
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+/* nu börjar nästa sida*/
+
+
+#guide_body {
+
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 50px 100px 400px;
+    grid-template-areas: 
+        "menu"
+        "title"
+        "cards"
+    ;
+    background-color: antiquewhite;
+}
+
+#guide_nav {
+
+    grid-area: menu;
+    background-color: #2980b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#guides_title {
+
+    grid-area: title;
+    background-color: #2980b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#guide_div {
+
+    grid-area: cards;
+    background-color: #2980b9;
+    display: grid;
+}
+
+#tv_img {
+
+    height: 50px;
+    width: auto;
+}
+
+#lighting_img {
+
+    height: 50px;
+    width: auto;
+}
+
+#kamera_img {
+
+    height: 50px;
+    width: auto;
+}
+
+#stereo_img {
+
+    height: 50px;
+    width: auto;
+}
