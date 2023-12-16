@@ -160,7 +160,7 @@ a {
 #guide_title {
 
     grid-area: title;
-    background-color: #2980b9;
+    background-color: #0f4264;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,8 +170,8 @@ a {
 #guide_div {
 
     grid-area: cards;
-    background-color: #2980b9;
-    display: grid;
+    background-color: #bfe0f5;
+    display: flex;
 }
 
 #tv_img {
