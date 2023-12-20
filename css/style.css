@@ -26,9 +26,6 @@
 
     grid-area: nav;
     background-color: #2980b9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
@@ -38,29 +35,34 @@ ul {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    color: #d1b203;
     font-family: orbitron;
 
 }
 
+li{
+    color: #d1b203;
+    transition: background-color 0.3s ease;
+} 
+
+li:hover{
+
+    color: #c48704;
+}
 
 #start_img {
 
     grid-area: img;
-    background-color: aquamarine;
+    background-image: url(/img/space.jpg);
     display: flex;
     align-items: flex-end;
     justify-content: center;
-
-
-}
-
-#space_picture {
-
+    align-items: center;
     height: 400px;
-    width: 1263px;
+
+
 
 }
+
 
 
 
@@ -92,8 +94,11 @@ ul {
 
 #alien {
 
-    height: 300px;
+    height: 330px;
     width: auto;
+    border-radius: 15px;
+    border: 10px solid #d1b203;
+
 }
 
 #nerdy_title {
@@ -138,7 +143,7 @@ a {
 
     display: grid;
     height: 100vh;
-    grid-template-rows: 50px 100px 400px;
+    grid-template-rows: 50px 100px 1fr;
     grid-template-areas: 
         "menu"
         "title"
@@ -151,49 +156,291 @@ a {
 
     grid-area: menu;
     background-color: #2980b9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    
 }
 
 #guide_title {
 
     grid-area: title;
-    background-color: #0f4264;
+    background-image: url(/img/space.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
+}
+
+#GUIDES{
+
+    color: #d1b203;
+    font-family: orbitron;
+    font-size: 50px;
 }
 
 #guide_div {
 
     grid-area: cards;
-    background-color: #bfe0f5;
+    background-image:url(/img/space.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tv li ka st"
+    ;
+    padding: 20px;
+    
+}
+
+#tv_card{
+
+    grid-area: tv;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+    border-radius: 15px;
 }
 
 #tv_img {
 
-    height: 50px;
-    width: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+#tv_title{
+    color: #d1b203;
+    font-size: 30px;
+    font-family: orbitron;
+}
+
+#lighting_card{
+
+    grid-area: li;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+    border-radius: 15px;
+   
 }
 
 #lighting_img {
 
-    height: 50px;
-    width: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px
+}
+
+#lighting_title{
+   
+    color: #d1b203;
+    font-size: 30px;
+    font-family: orbitron;
+     
+}
+
+#kamera_card{
+
+    grid-area: ka;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+    border-radius: 15px;
+
 }
 
 #kamera_img {
 
-    height: 50px;
-    width: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px
+}
+
+#kamera_title{
+   
+    color: #d1b203;
+    font-size: 30px;
+    font-family: orbitron;
+     
+}
+
+#stereo_card{
+
+    grid-area: st;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+    border-radius: 15px;
 }
 
 #stereo_img {
 
-    height: 50px;
-    width: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px
+}
+
+#stereo_title{
+   
+    color: #d1b203;
+    font-size: 30px;
+    font-family: orbitron;
+     
+}
+
+.card{
+
+    background-color: #2980b9;
+    transition: background-color 0.2s ease;
+
+}
+
+.card:hover{
+
+    background-color: #13568d;
+}
+
+
+/* nu börjar nästa sida*/
+
+
+#news_body {
+
+    display: grid;
+    height: 150vh;
+    grid-template-rows: 50px 100px 1fr;
+    grid-template-areas: 
+        "meny"
+        "head"
+        "news"
+    ;
+    background-color: antiquewhite;
+}
+
+#news_nav {
+
+    grid-area: meny;
+    background-color: #2980b9;
+
+
+}
+
+#news_title  {
+
+    grid-area: head;
+    background-image: url(/img/space.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#TECH_NEWS {
+    color: #d1b203;
+    font-family: orbitron;
+    font-size: 50px;
+}
+
+#news_div {
+
+    grid-area: news;
+    background-image: url(/img/space.jpg);
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 5fr 4fr ;
+    grid-template-areas: 
+        "news1 news2"
+        "news1 news3"
+    ;
+}
+
+#news_1 {
+
+    grid-area: news1;
+    background-color: #2980b9;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    color:#023056;
+    font-family: orbitron;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+#news1_title {
+
+    font-size: 27px;
+    color: #d1b203;
+}
+
+#date1 {
+
+    color: #13568d;
+
+}
+
+#news_2 {
+
+    grid-area: news2;
+    background-color:#2980b9;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    color:#023056;
+    font-family: orbitron;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+
+}
+
+#news2_title {
+
+    font-size: 27px;
+    color: #d1b203;
+}
+
+#date2 {
+
+    color: #13568d;
+}
+
+#news_3 {
+
+    grid-area: news3;
+    background-color:#2980b9;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    color:#023056;
+    font-family: orbitron;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+#news3_title {
+
+    font-size: 27px;
+    color: #d1b203;
+}
+
+#date3 {
+
+    color: #13568d;
+}
+
+nav{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
